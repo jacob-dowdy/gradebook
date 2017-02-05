@@ -1,3 +1,4 @@
+# created dictionaries that hold values for different types of assignments.
 lloyd = {
     "name": "Lloyd",
     "homework": [90.0, 97.0, 75.0, 92.0],
@@ -17,7 +18,7 @@ tyler = {
     "tests": [100.0, 100.0]
 }
 
-# Add your function below!
+# Functions used to find the grade average for each student.
 def average(numbers):
     total = sum(numbers)
     total = float(total) / len(numbers)
@@ -31,7 +32,7 @@ def get_average(student):
     grade3 = tests * .60
     
     return grade1 + grade2 + grade3
-    
+# Function used to determine the letter grade in the course.   
 def get_letter_grade(score):
     if score >= 90:
         return "A"
@@ -44,7 +45,7 @@ def get_letter_grade(score):
     else: 
         return "F"
 print get_letter_grade(lloyd)
-
+# Function used to determine the average class grade and average class letter grade.
 students = [lloyd, alice, tyler]
 def get_class_average(students):
     results = []
